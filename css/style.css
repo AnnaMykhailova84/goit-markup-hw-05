@@ -92,33 +92,16 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
-  /* padding: 24px 0; */
 }
 
 .nav-list {
   display: flex;
 }
-.nav-item {
-  /* display: flex; */
-  /* position: relative; */
-}
-/* .nav-item.active::after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  content: '';
-  width: 0%;
-  height: 4px;
-  border-radius: 2px 2px;
-  background-color: #404bbf;
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .nav-item-link {
   position: relative;
   font-weight: 500;
   color: #2e2f42;
-  /* color: #404bbf; */
   letter-spacing: 0.02em;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,7 +111,7 @@ body {
   color: #404bbf; */
 }
 
-.nav-item-link::after {
+.nav-item-link.active::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -196,7 +179,7 @@ body {
 }
 .banner-container {
   max-width: 1440px;
-
+  margin: 0 auto;
 }
 
 .banner-title {
@@ -318,7 +301,6 @@ body {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  /* transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .member-desc {
@@ -339,13 +321,7 @@ body {
 }
 
 .member-icon {
-  /* fill: #4d5ae5; */
   fill: #f4f4fd;
-  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-.member-icon-item:hover .member-icon {
-  /* fill: #404bbf; */
 }
 
 .member-icon-list {
@@ -378,7 +354,6 @@ body {
 .member-icon-link:focus {
   background-color: #404bbf;
 }
-
 
 .portfolio {
   padding: 120px 0;
@@ -426,29 +401,6 @@ body {
   overflow: hidden;
 }
 
-/* .portfolio-item-card.card-1 {
-  background-image: url('../images/portfolio1.jpg');
-} */
-
-/* .portfolio-item-card.card-2 {
-  background-image: url('../images/portfolio2.jpg');
-} */
-
-/* .portfolio-item-card.card-3 {
-  background-image: url('../images/portfolio3.jpg');
-} */
-
-/* .portfolio-item-card.card-4 {
-  background-image: url('../images/portfolio4.jpg');
-} */
-
-/* .portfolio-item-card.card-5 {
-  background-image: url('../images/portfolio5.jpg');
-} */
-
-/* .portfolio-item-card.card-6 {
-  background-image: url('../images/portfolio6.jpg');
-} */
 /* .overlay, */
 .portfolio-item-text {
   font-size: 16px;
@@ -549,9 +501,7 @@ body {
 .footer-icon {
   fill: #f4f4fd;
 }
-.footer-link:hover {
-  background-color: #31D0AA;
-}
+.footer-link:hover,
 .footer-link:focus {
   background-color: #31D0AA;
 }
