@@ -402,35 +402,40 @@
               <!-- ========================= start MODAL ========================= -->
 
 
-    <div class="modal-overlay is-opened">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <div class="modal-close">
-          <a href="" class="close-link">
-            <svg class="close-icon" width="8" height="8">
+          <a href="" class="modal-close-link">
+            <svg class="modal-close-icon" width="8" height="8">
               <use href="./images/icons.svg#close-icon"></use>
             </svg>
           </a>
         </div>
-        <form action="" class="form">
+        <form action="" class="modal-form">
           <p class="form-title">Leave your contacts and we will call you back</p>
           <label class="form-lable">
             Name
-            <input type="text" class="form-input">
+            <input type="text" name="contact-name" id="contact-name" class="form-input">
           </label>
           <label class="form-lable">
             Phone
-            <input type="text" class="form-input">
+            <input type="text" name="contact-phone" id="contact-phone" class="form-input">
           </label>
           <label class="form-lable">
             Email
-            <input type="text" class="form-input">
+            <input type="text" name="contact-email" id="contact-email" class="form-input">
           </label>
           <label class="form-lable" for="comment">Comment</label>
-          <textarea name="" id="comment" placeholder="Text input"></textarea>
-          <label for="policy" class="form-label-checkbox">
-            I accept the terms and conditions of the <span>Privacy Policy</span>
-          </label>
-          <input type="checkbox" class="checkbox" id="policy">
+          <textarea name="comment" rows="8" id="comment" placeholder="Text input"></textarea>
+          
+          <fieldset class="form-policy">
+            <!-- <legend></legend> -->
+            <input type="checkbox" name="policy" value="yes" class="checkbox-policy" id="policy" required>
+            <label for="policy" class="form-label-checkbox">
+              I accept the terms and conditions of the <a href="">Privacy Policy</a>
+            </label>
+
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </div>
@@ -488,9 +493,9 @@
           <form action="" class="footer-form">
             <label class="footer-form-title">
               Subscribe
-              <input type="email" class="footer-input" name="email" placeholder="E-mail">
+              <input type="email" name="subscribe-email" id="subscribe-email" placeholder="E-mail" class="footer-input">
             </label>
-            <button class="footer-btn" type="submit">
+            <button type="submit" class="footer-btn">
               Subscribe 
               <span class="footer-btn-icon">
                 <svg width="24" height="24">
