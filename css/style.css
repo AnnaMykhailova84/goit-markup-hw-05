@@ -580,6 +580,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #2E2F42;
+  /* background: rgba(46, 47, 66, 0.4); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -588,7 +589,7 @@ body {
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
 }
-.modal-overlay.is-open {
+.modal-overlay.is-opened {
   opacity: 1;
   pointer-events: auto;
 }
@@ -608,7 +609,7 @@ body {
   align-self: center;
 }
 .close-link {
-  display: block;
+  display: flex;
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
@@ -621,6 +622,7 @@ body {
 
 .close-icon {
   fill: #2E2F42;
+  margin: auto;
 }
 .close-link:hover,
 .close-link:focus {
