@@ -108,7 +108,7 @@ body {
 }
 
 .nav-item-link.active {
-  color: #404bbf; */
+  color: #404bbf; 
 }
 
 .nav-item-link.active::after {
@@ -571,7 +571,7 @@ body {
 }
 
 
-/* =========  MODAL WINDOW ========= */
+/* ====================  MODAL WINDOW ================= */
 
 .modal-overlay {
   position: fixed;
@@ -593,8 +593,46 @@ body {
   pointer-events: auto;
 }
 .modal {
+  padding: 24px;
+  width: 408px;
+  border-radius: 4px;
   background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 
+              0 1px 3px 0 rgba(0, 0, 0, 0.12), 
+              0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
+
+.modal-close {
+  display: flex;
+  justify-self: flex-end;
+  align-self: center;
+}
+.close-link {
+  display: block;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+  background-color: #E7E9FC;
+  transition: background-color 150ms ease-in-out;
+  text-align: center;
+  color: #2E2F42;
+}
+
+.close-icon {
+  fill: #2E2F42;
+}
+.close-link:hover,
+.close-link:focus {
+  color: #fff;
+  background-color: #404bbf;
+  border-color: rgba(64, 75, 191, 1);;
+}
+.close-link:hover .close-icon,
+.close-link:focus .close-icon{
+  fill: #fff;
+}
+
 .form {
   padding: 50px 0;
   display: flex;
