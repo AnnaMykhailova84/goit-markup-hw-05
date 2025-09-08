@@ -707,7 +707,7 @@ body {
 
 .form-input-icon {
   fill: #2E2F42;
-  background-color: rgba(255, 192, 203, .5);
+  /* background-color: rgba(255, 192, 203, .5); */
   position: absolute;
   bottom: 10px;
   left: 16px;
