@@ -63,7 +63,7 @@
       <section class="banner banner-container">
         <div class="container">
           <h1 class="banner-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="banner-btn">Order Service</button>
+          <button type="button" class="banner-btn" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- STAND OUT section -->
@@ -470,10 +470,9 @@
           </ul>
         </div>
         <div class="footer-block-form">
-          <!-- <p class="footer-form-title">Subscribe</p> -->
+          <p class="footer-form-title">Subscribe</p>
           <form action="" class="footer-form">
             <label class="footer-form-title">
-              Subscribe
               <input
                 type="email"
                 name="subscribe-email"
@@ -484,11 +483,10 @@
             </label>
             <button type="submit" class="footer-btn">
               Subscribe
-              <span class="footer-btn-icon">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#send-icon"></use>
-                </svg>
-              </span>
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#send-icon"></use>
+              </svg>
+              <!-- <span class="footer-btn-icon"></span> -->
             </button>
           </form>
         </div>
@@ -496,14 +494,14 @@
     </footer>
     <!-- ========================= start MODAL ========================= -->
 
-    <div class="modal-background is-open">
+    <div class="modal-background " data-modal>
       <div class="modal">
         <div class="modal-close">
-          <a href="" class="modal-close-link">
+          <button type="button" class="modal-close-link" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
               <use href="./images/icons.svg#close-icon"></use>
             </svg>
-          </a>
+          </button>
         </div>
         <p class="form-title">
           Leave your contacts and we will call you back
@@ -559,6 +557,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 
     <!-- ========================= end MODAL ========================= -->
   </body>
