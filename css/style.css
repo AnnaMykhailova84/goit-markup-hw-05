@@ -786,8 +786,7 @@ body {
 }
 
 .form-label-checkbox > .form-checkbox-icon {
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .modal-form .form-label-policy > .form-link-policy {
@@ -804,13 +803,12 @@ body {
 }
 
 .checkbox-policy[value='true'] + .form-label-policy > .form-label-checkbox {
-  border: none;
-  fill: #f4f4fd;
+  border: 1px solid rgba(64, 75, 191, 1);  
   background-color: rgba(64, 75, 191, 1);
 }
 
 .checkbox-policy[value='true'] + .form-label-policy > .form-label-checkbox>.form-checkbox-icon {
-  opacity: 1;
+  fill: #f4f4fd;
 }
 
 .modal-form-btn {
