@@ -784,7 +784,7 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form .form-label-policy > a {
+.modal-form .form-label-policy > .form-link-policy {
   color: #4d5ae5;
   text-decoration: underline;
 }
