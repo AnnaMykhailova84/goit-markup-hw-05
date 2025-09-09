@@ -757,8 +757,8 @@ body {
               background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label-checkbox .form-checkbox-icon {
-  fill: #f4f4fd;
+.form-label-checkbox>.form-checkbox-icon {
+  fill: yellow;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
               fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -778,11 +778,12 @@ body {
 }
 
 .checkbox-policy[value="checked"] + .form-label-policy>.form-label-checkbox {
-    border-color: rgba(64, 75, 191, 1);;
-    background-color: rgba(64, 75, 191, 1);
+  border-color: rgba(64, 75, 191, 1);;
+  background-color: rgba(64, 75, 191, 1);
 }
 
-.checkbox-policy[value="checked"]+.form-label-policy>.form-label-checkbox>.form-input-icon {
+.checkbox-policy[value="checked"] + .form-label-policy>.form-label-checkbox>.form-input-icon {
+  fill: #f4f4fd;
   opacity: 1;
 }
 
