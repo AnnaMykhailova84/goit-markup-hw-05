@@ -550,13 +550,14 @@
             </div>
           </div>
 
-          <div class="form-box">
+          <div class="form-box last">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
-              name="ser-comment"
+              name="user-comment"
               rows="8"
               id="user-comment"
               placeholder="Text input"
+              class="form-box-textarea"
             ></textarea>
           </div>
 
@@ -564,8 +565,8 @@
             <input
               type="checkbox"
               name="user-privacy"
-              value="checked"
-              class="checkbox-policy"
+              value="true"
+              class="checkbox-policy visually-hidden"
               id="user-privacy"
               required
             />
