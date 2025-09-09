@@ -738,19 +738,19 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-box-textarea:hover,
 .form-box-textarea:focus {
   border-color: #4D5AE5;
 }
 
-.form-box-input:hover .form-input,
-.form-box-input:hover .form-input-icon,
-.form-box-input:focus .form-input,
-.form-box-input:focus .form-input-icon {
+.form-input:focus {
   border-color: #4D5AE5;
+}
+/* .form-box-input:focus-within .form-input-icon {
+  fill: #4D5AE5;
+} */
+.form-input:focus + .form-input-icon {
   fill: #4D5AE5;
 }
-
 
 .form-box-policy {
   position: relative;
