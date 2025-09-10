@@ -787,20 +787,16 @@ body {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: transparent;
 }
 
-.checkbox-policy[value='true']+.form-label-policy>.form-label-checkbox {
+.checkbox-policy:checked + .form-label-policy>.form-label-checkbox {
   border: none;
   background-color: #404bbf;
   fill: #F4F4FD;
-}
-
-.checkbox-policy[value='true']+.form-label-policy>.form-label-checkbox>.form-checkbox-icon {
-  fill: #63c116;
 }
 
 .checkbox-policy[value='false']+.form-label-policy>.form-label-checkbox {
